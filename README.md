@@ -1,27 +1,29 @@
-# hello-bot
+# bot
 
-simple bot that says hello and MP rules.
-Built with [nodejs](https://nodejs.org/en/) and the [discordjs](https://discord.js.org/#/) library.
+simple bot qui renvoie des réponse si on le question avec des commandes
+fait avec : [nodejs](https://nodejs.org/en/) et [discordjs](https://discord.js.org/#/) library.
 
 ## Setup
 
-- You need `git` and `nodejs` on your system
-- create a `user bot`
-    It will have a `bot ID` and a `bot token`.
+- Vous aurez besoin de `git` et `nodejs` sur votre PC
+- céer un bot `user bot`
+    Il aura un `bot ID` et `bot token`.
 
-    You can find all that on the discord website :
+    Vous pouvez retrouver ces information sur :
 
     [https://discordapp.com/developers/applications/me](https://discordapp.com/developers/applications/me)
 
-- Then authorize your bot to your discord with this link :
+- Puis donner lui les authorisation que vous voulez sur votre serveur avec ce lien :
+
+    *il faudra le modifier pour etre rediriger sur la page de votre bot*
 
     `https://discordapp.com/oauth2/authorize?&client_id=BOT_ID&scope=bot`
 
-    (where `BOT_ID` is replaced by your bot id)
+    (quand le `BOT_ID` sera remplacer par votre bot id)
 
-- Find your id by right-clicking yourself and click `copy ID` in the menu
+- trouvé votre id avec un clic droit sur votre profils personnele et cliec sur `copy ID` dans le menu **Attention il faudra activité le mode developpeur dans les paramètres pour avoir accé a cette fonction**
 
-- You must then create a config file named `config.json` like so :
+- Maintenant vous devez crée un fichier `config.json` qui contiendra :
 
     ```js
     {
@@ -30,9 +32,9 @@ Built with [nodejs](https://nodejs.org/en/) and the [discordjs](https://discord.
     }
     ```
 
-    (where `my.bot.token` is replaced by your bot token, and `245646465465` is your personnal discord id).
+    (Le `my.bot.token` sera remplacer par votre bot token et `245646465465` est votre id de votre compte perso.
 
-:warning: _your bot token is private, don't share it_
+:warning: _Votre bot token doit être privé ! Ne le partagé pas !_
 
 ### Install
 
