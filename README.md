@@ -1,29 +1,29 @@
-# bot
+# Bot
 
-simple bot qui renvoie des réponse si on le question avec des commandes
-fait avec : [nodejs](https://nodejs.org/en/) et [discordjs](https://discord.js.org/#/) library.
+Simple bot qui renvoie des réponses, si on la question avec des commandes.
+Fait avec : [nodejs](https://nodejs.org/en/) et [discordjs](https://discord.js.org/#/) librairie.
 
 ## Setup
 
-- Vous aurez besoin de `git` et `nodejs` sur votre PC
-- céer un bot `user bot`
+- Vous aurez besoin de `git` et `nodejs` sur votre PC.
+- Créer un bot `user bot`.
     Il aura un `bot ID` et `bot token`.
 
-    Vous pouvez retrouver ces information sur :
+    Vous pouvez retrouver ces informations sur :
 
     [https://discordapp.com/developers/applications/me](https://discordapp.com/developers/applications/me)
 
-- Puis donner lui les authorisation que vous voulez sur votre serveur avec ce lien :
+- Puis donner lui les autorisations que vous voulez de votre serveur avec ce lien :
 
-    *il faudra le modifier pour etre rediriger sur la page de votre bot*
+    *Il faudra le modifier pour être rediriger sur la page de votre bot.*
 
     `https://discordapp.com/oauth2/authorize?&client_id=BOT_ID&scope=bot`
 
     (quand le `BOT_ID` sera remplacer par votre bot id)
 
-- trouvé votre id avec un clic droit sur votre profils personnele et cliec sur `copy ID` dans le menu **Attention il faudra activité le mode developpeur dans les paramètres pour avoir accé a cette fonction**
+- Trouvé votre id avec un clic droit sur votre profils personnel et cliqué sur `copy ID` dans le menu. **Attention il faudra activé le mode développeur dans les paramètres pour avoir accès à cette fonction**
 
-- Maintenant vous devez crée un fichier `config.json` qui contiendra :
+- Maintenant vous devez créer un fichier `config.json` qui contiendra :
 
     ```js
     {
@@ -40,7 +40,7 @@ fait avec : [nodejs](https://nodejs.org/en/) et [discordjs](https://discord.js.o
 
 ```shell
 # clone the repo and go into the folder
-git clone https://github.com/WiZaROnTheWeb/BotDiscord.git && cd hello-bot
+git clone https://github.com/WiZaROnTheWeb/BotDiscord.git && cd botDiscord
 
 # install the required modules (discord.js here)
 npm install discord.js
