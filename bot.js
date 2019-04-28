@@ -2,8 +2,8 @@ const Discord = require('discord.js');
 const config = require('./src/config');
 const fs = require('fs');
 
-let synthaxe = fs.readFileSync('./src/synthaxe.md', 'utf8');
 let rules = fs.readFileSync('./src/rules.md', 'utf8');
+let synthaxe = fs.readFileSync('./src/synthaxe.md','utf8');
 const Client = new Discord.Client();
 
 Client.on('ready', () => {
@@ -22,15 +22,21 @@ Client.on('message', ({ author, content }) => {
 
 Client.on('message', message => {
 
-  if (message.content === '!question') {
+  if (message.content.startsWith('!question')) {
     console.log("send reply at !question")
-    message.channel.send('https://www.youtube.com/watch?v=AsB2eK4nPjM');
+    message.channel.send("https://www.youtube.com/watch?v=AsB2eK4nPjM")
   }
-  if (message.content === "!rules") {
-    console.log("send rules")
-    message.channel.send(rules)
+  else if(message.content.startsWith("!" + "rules")) {
+    console.log("send rules") 
+    message.reply("Look tes mp ;)")
+    message.author.send(rules)
   }
-
+  else if(message.content.startsWith("!server")) {
+      message.channel.send(`Server name:  ${message.guild.name} \nTotal members: ${message.guild.memberCount} \n Owner : ${message.guild.owner}`)
+    }
+  else if (message.content.startsWith("!synthaxe")){
+    message.channel.send(synthaxe);
+  }
 });
 
 Client.on('guildMemberAdd', ({ user }) => {
@@ -39,4 +45,4 @@ Client.on('guildMemberAdd', ({ user }) => {
   user.send(rules).catch(console.error)
 });
 
-Client.login(config.ClientToken);
+Client.login(config.botToken);

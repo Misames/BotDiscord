@@ -1,5 +1,7 @@
+# setup 
 *.json
 node_modules
+.vscode
 
 # Compiled source #
 ###################

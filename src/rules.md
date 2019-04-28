@@ -1,3 +1,5 @@
-,
+# **1** <@183632844856229889> a toujours raison
 
-👌  les gesn c'est super **gras**
+# **2** ne pas contredire <@183632844856229889>
+
+# **3** Je sais pas 👀
