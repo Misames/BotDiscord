@@ -1,6 +1,6 @@
 # Bot
 
-Simple bot qui renvoie des réponses, si on la question avec des commandes.
+Simple bot qui renvoie des réponses, si on la questionne avec des commandes.
 Fait avec : [nodejs](https://nodejs.org/en/) et [discordjs](https://discord.js.org/#/) librairie.
 
 ## Setup
@@ -15,13 +15,13 @@ Fait avec : [nodejs](https://nodejs.org/en/) et [discordjs](https://discord.js.o
 
 - Puis donner lui les autorisations que vous voulez de votre serveur avec ce lien :
 
-    *Il faudra le modifier pour être rediriger sur la page de votre bot.*
+    *Il faudra le modifier pour être redirigé sur la page de votre bot.*
 
     `https://discordapp.com/oauth2/authorize?&client_id=BOT_ID&scope=bot`
 
     (quand le `BOT_ID` sera remplacer par votre bot id)
 
-- Trouvé votre id avec un clic droit sur votre profils personnel et cliqué sur `copy ID` dans le menu. **Attention il faudra activé le mode développeur dans les paramètres pour avoir accès à cette fonction**
+- Trouvé votre id avec un clic droit sur votre profils personnel et cliqué sur `copy ID` dans le menu. **Attention, il faudra activer le mode développeur dans les paramètres pour avoir accès à cette fonction**
 
 - Maintenant vous devez créer un fichier `config.json` qui contiendra :
 
