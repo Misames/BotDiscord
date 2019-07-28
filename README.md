@@ -1,29 +1,26 @@
-# Bot
+# botDiscord
+simple bot
+Built with [nodejs](https://nodejs.org/en/) and the [discordjs](https://discord.js.org/#/) library.
 
-Simple bot qui renvoie des réponses, si on la question avec des commandes.
-Fait avec : [nodejs](https://nodejs.org/en/) et [discordjs](https://discord.js.org/#/) librairie.
+### Setup
+ - You need `git` and `nodejs` on your system
+ - create a `user bot`
+    It will have a `bot ID` and a `bot token`.
 
-## Setup
-
-- Vous aurez besoin de `git` et `nodejs` sur votre PC.
-- Créer un bot `user bot`.
-    Il aura un `bot ID` et `bot token`.
-
-    Vous pouvez retrouver ces informations sur :
+    You can find all that on the discord website :
 
     [https://discordapp.com/developers/applications/me](https://discordapp.com/developers/applications/me)
 
-- Puis donner lui les autorisations que vous voulez de votre serveur avec ce lien :
 
-    *Il faudra le modifier pour être rediriger sur la page de votre bot.*
+ - Then authorize your bot to your discord with this link :
 
     `https://discordapp.com/oauth2/authorize?&client_id=BOT_ID&scope=bot`
 
-    (quand le `BOT_ID` sera remplacer par votre bot id)
+    (where `BOT_ID` is replaced by your bot id)
 
-- Trouvé votre id avec un clic droit sur votre profils personnel et cliqué sur `copy ID` dans le menu. **Attention il faudra activé le mode développeur dans les paramètres pour avoir accès à cette fonction**
+ - Find your id by right-clicking yourself and click `copy ID` in the menu
 
-- Maintenant vous devez créer un fichier `config.json` qui contiendra :
+ - You must then create a config file named `config.json` like so :
 
     ```js
     {
@@ -31,20 +28,20 @@ Fait avec : [nodejs](https://nodejs.org/en/) et [discordjs](https://discord.js.o
       "adminId": "245646465465"
     }
     ```
+    (where `my.bot.token` is replaced by your bot token, and `245646465465` is your personnal discord id).
 
-    (Le `my.bot.token` sera remplacer par votre bot token et `245646465465` est votre id de votre compte perso.
+:warning: _your bot token is private, don't share it_
 
-:warning: _Votre bot token doit être privé ! Ne le partagé pas !_
 
 ### Install
-
 ```shell
 # clone the repo and go into the folder
-git clone https://github.com/WiZaROnTheWeb/BotDiscord.git && cd botDiscord
+git clone https://github.com/QtWiZaR/BotDiscord.git && cd botDiscord
 
 # install the required modules (discord.js here)
-npm install discord.js
+npm install
 
 # start the bot
 node bot
+
 ```
