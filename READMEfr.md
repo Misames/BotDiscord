@@ -40,7 +40,7 @@ Fait avec : [nodejs](https://nodejs.org/en/) et [discordjs](https://discord.js.o
 
 ```shell
 # clone the repo and go into the folder
-git clone https://github.com/WiZaROnTheWeb/BotDiscord.git && cd botDiscord
+git clone https://github.com/Misames/BotDiscord.git && cd botDiscord
 
 # install the required modules (discord.js here)
 npm install discord.js
