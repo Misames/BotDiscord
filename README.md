@@ -36,7 +36,7 @@ Built with [nodejs](https://nodejs.org/en/) and the [discordjs](https://discord.
 ### Install
 ```shell
 # clone the repo and go into the folder
-git clone https://github.com/QtWiZaR/BotDiscord.git && cd botDiscord
+git clone https://github.com/Misames/BotDiscord.git && cd botDiscord
 
 # install the required modules (discord.js here)
 npm install
