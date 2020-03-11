@@ -18,20 +18,7 @@ Built with [nodejs](https://nodejs.org/en/) and the [discordjs](https://discord.
 
     (where `BOT_ID` is replaced by your bot id)
 
- - Find your id by right-clicking yourself and click `copy ID` in the menu
-
- - You must then create a config file named `config.json` like so :
-
-    ```js
-    {
-      "botToken": "my.bot.token",
-      "adminId": "245646465465"
-    }
-    ```
-    (where `my.bot.token` is replaced by your bot token, and `245646465465` is your personnal discord id).
-
-:warning: _your bot token is private, don't share it_
-
+ - Find your id by right-clicking yourself and click `copy ID` in the menuq
 
 ### Install
 ```shell

@@ -1,5 +1,4 @@
 const Discord = require('discord.js')
-const config = require('./src/config')
 const fs = require('fs')
 
 let rules = fs.readFileSync('./src/rules.md', 'utf8')
@@ -8,39 +7,39 @@ let help = fs.readFileSync('./src/help.md', 'utf8')
 const Client = new Discord.Client()
 
 Client.on('ready', () => {
-    console.log('Chargement du Client ...')
-    Client.user.setActivity('Quelque chose ¯|_(ツ)_|¯')
+  console.log('Bot ready :D')
+  Client.user.setActivity('Somethings ¯|_(ツ)_|¯')
 })
 
 Client.on('message', ({ author, content, guild }) => {
-    if (author.lastMessage.content.startsWith('!ModifyRules') && author.id === guild.ownerID) {
-        console.log(guild.ownerID)
-        console.log('setup rules.md')
-        fs.writeFile('./src/rules.md', (rules = content.split('!ModifyRules')), err =>
-            author.send(err ? `Erreur en changeant les regles: \`${err.message}\`` : `regles mises a jour !` + ' \n' + guild.name)
-        )
-    }
+  if (author.lastMessage.content.startsWith('!ModifyRules') && author.id === guild.ownerID) {
+    console.log(guild.ownerID)
+    console.log('setup rules.md')
+    fs.writeFile('./src/rules.md', (rules = content.split('!ModifyRules')), err =>
+      author.send(err ? `Erreur en changeant les regles: \`${err.message}\`` : `regles mises a jour !` + ' \n' + guild.name)
+    )
+  }
 })
 
 Client.on('message', message => {
-    if (!message.guild) return
+  if (!message.guild) return
 
-    if (message.content.startsWith('!question')) {
-        console.log('send reply at !question')
-        message.channel.send('https://www.youtube.com/watch?v=AsB2eK4nPjM')
-    } else if (message.content.startsWith('!rules')) {
-        console.log('send rules')
-        message.reply('Look tes mp ;)')
-        message.author.send(rules)
-    } else if (message.content.startsWith('!server')) {
-        message.channel.send(`Server name: ${message.guild.name} \nTotal members: ${message.guild.memberCount} \n Owner : ${message.guild.owner}`)
-    } else if (message.content.startsWith('!synthaxe')) {
-        console.log("envoie l'aide synthaxe à " + message.author.username)
-        message.channel.send(synthaxe)
-    } else if (message.content.startsWith('!help')) {
-        console.log('envoie la listes des commande à ' + message.author.username)
-        message.channel.send(help)
-    }
+  if (message.content.startsWith('!question')) {
+    console.log('send reply at !question')
+    message.channel.send('https://www.youtube.com/watch?v=AsB2eK4nPjM')
+  } else if (message.content.startsWith('!rules')) {
+    console.log('send rules')
+    message.reply('Look tes mp ;)')
+    message.author.send(rules)
+  } else if (message.content.startsWith('!server')) {
+    message.channel.send(`Server name: ${message.guild.name} \nTotal members: ${message.guild.memberCount} \n Owner : ${message.guild.owner}`)
+  } else if (message.content.startsWith('!synthaxe')) {
+    console.log("envoie l'aide synthaxe à " + message.author.username)
+    message.channel.send(synthaxe)
+  } else if (message.content.startsWith('!help')) {
+    console.log('envoie la listes des commande à ' + message.author.username)
+    message.channel.send(help)
+  }
 })
 
 Client.on('guildMemberAdd', ({ user, guild }) => {
@@ -49,4 +48,4 @@ Client.on('guildMemberAdd', ({ user, guild }) => {
     user.send(rules).catch(console.error)
 })
 
-Client.login(config.botToken)
+Client.login('yourBotToken')
