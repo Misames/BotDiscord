@@ -1,4 +1,4 @@
-# botDiscord
+# BotDiscord
 simple bot
 Built with [nodejs](https://nodejs.org/en/) and the [discordjs](https://discord.js.org/#/) library.
 
@@ -18,7 +18,20 @@ Built with [nodejs](https://nodejs.org/en/) and the [discordjs](https://discord.
 
     (where `BOT_ID` is replaced by your bot id)
 
- - Find your id by right-clicking yourself and click `copy ID` in the menuq
+ - Find your id by right-clicking yourself and click `copy ID` in the menu
+
+ - Now you should create a new file in `src` `settings.js` with this content :
+
+    ```js
+    {
+      "token": "my.bot.token",
+      "adminId": "245646465465"
+    }
+    ```
+
+    (`my.bot.token` Will be remplaced by your bot token and `245646465465` is your id of your account.
+
+:warning: _Your bot token must be private ! Do not share it !_
 
 ### Install
 ```shell

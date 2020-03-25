@@ -23,7 +23,7 @@ Fait avec : [nodejs](https://nodejs.org/en/) et [discordjs](https://discord.js.o
 
 - Trouvé votre id avec un clic droit sur votre profils personnel et cliqué sur `copy ID` dans le menu. **Attention il faudra activé le mode développeur dans les paramètres pour avoir accès à cette fonction**
 
-- Maintenant vous devez créer un fichier `config.json` qui contiendra :
+- Maintenant vous devez créer un fichier `settings.js` qui contiendra :
 
     ```js
     {
