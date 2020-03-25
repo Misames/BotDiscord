@@ -29,9 +29,9 @@ Built with [nodejs](https://nodejs.org/en/) and the [discordjs](https://discord.
     }
     ```
 
-    (`my.bot.token` Will be remplaced by your bot token and `245646465465` is your id of your account.
+    `my.bot.token` Will be remplaced by your bot token and `245646465465` is your id of your account.
 
-:warning: _Your bot token must be private ! Do not share it !_
+:warning: _Your bot token must be private ! Do not share it !_ :warning:
 
 ### Install
 ```shell
