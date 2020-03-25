@@ -43,15 +43,9 @@ Client.on('message', message => {
 })
 
 Client.on('guildMemberAdd', ({ user, guild }) => {
-  console.log('send reply at every add to the chanel')
-  user.send(
-    ':dragon: Bienvenue à toi sur le Discord de **__' +
-    guild.name +
-    '__** <@' +
-    user.id +
-    "> ! Je t'invite à lire les **règles** du serveur ainsi que le **mode d'emploi de Discord** dans le chan ***__#infos__***, à te présenter dans le salon ***__#general___*** et faire connaissance avec tout le monde ! :dragon:"
-  )
-  user.send(rules).catch(console.error)
+    console.log('send reply at every add to the chanel')
+    user.send(':dragon: Bienvenue à toi sur le Discord de **__' + guild.name + '__** <@' + user.id + "> ! Je t'invite à lire les **règles** du serveur ainsi que le **mode d'emploi de Discord** dans le chan ***__#infos__***, à te présenter dans le salon ***__#general___*** et faire connaissance avec tout le monde ! :dragon:")
+    user.send(rules).catch(console.error)
 })
 
 Client.login(set.token)
