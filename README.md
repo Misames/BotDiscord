@@ -23,9 +23,9 @@ Built with [nodejs](https://nodejs.org/en/) and the [discordjs](https://discord.
  - Now you should create a new file in `src` `settings.js` with this content :
 
     ```js
-    {
-      "token": "my.bot.token",
-      "adminId": "245646465465"
+    module.exports = {
+       token: '135488484.hgf4h2gf4q54df.dsf45sf',
+       id: '245646465465'
     }
     ```
 
