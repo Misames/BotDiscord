@@ -1,14 +1,5 @@
-<<<<<<< HEAD
 # Dependencies
 node_modules/
-=======
-# wokspace #
-############
-
-node_modules
-src/config.js
-.vscode
->>>>>>> 5710ffbb88e0c645d42d2c229d5c8ed9b3ce50df
 package-lock.json
 src/settings.js
 
