@@ -1,7 +1,7 @@
 const Discord = require('discord.js')
 const fs = require('fs')
+const config = require('./src/config')
 
-const set = require('./src/settings')
 let rules = fs.readFileSync('./src/rules.md', 'utf8')
 let synthaxe = fs.readFileSync('./src/synthaxe.md', 'utf8')
 let help = fs.readFileSync('./src/help.md', 'utf8')
@@ -48,4 +48,4 @@ Client.on('guildMemberAdd', ({ user, guild }) => {
     user.send(rules).catch(console.error)
 })
 
-Client.login(set.token)
+Client.login(config.botToken)

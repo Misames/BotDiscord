@@ -23,28 +23,27 @@ Fait avec : [nodejs](https://nodejs.org/en/) et [discordjs](https://discord.js.o
 
 - Trouvé votre id avec un clic droit sur votre profils personnel et cliqué sur `copy ID` dans le menu. **Attention il faudra activé le mode développeur dans les paramètres pour avoir accès à cette fonction**
 
-- Maintenant vous devez créer un fichier `settings.js` dans le dossier `src` qui contiendra :
+- Maintenant vous devez créer un fichier `config.js` dans le dossier `src` qui contiendra :
 
     ```js
     module.exports = {
        token: '135488484.hgf4h2gf4q54df.dsf45sf',
-       id : '245646465465'
     }
     ```
 
-    (Le `my.bot.token` sera remplacer par votre bot token et `245646465465` est votre id de votre compte perso.
+    (Le `my.bot.token` sera remplacer par votre bot token.
 
 :warning: _Votre bot token doit être privé ! Ne le partagé pas !_
 
 ### Install
 
 ```shell
-# clone the repo and go into the folder
+# cloné le dossier puis allez dedans
 git clone https://github.com/Misames/BotDiscord.git && cd botDiscord
 
-# install the required modules (discord.js here)
-npm install discord.js
+# installé les modules
+npm install
 
-# start the bot
+# démaré le bot
 node bot
 ```

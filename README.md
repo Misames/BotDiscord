@@ -25,11 +25,10 @@ Built with [nodejs](https://nodejs.org/en/) and the [discordjs](https://discord.
     ```js
     module.exports = {
        token: '135488484.hgf4h2gf4q54df.dsf45sf',
-       id: '245646465465'
     }
     ```
 
-    `my.bot.token` Will be remplaced by your bot token and `245646465465` is your id of your account.
+    `my.bot.token` Will be remplaced by your bot token.
 
 :warning: _Your bot token must be private ! Do not share it !_ :warning:
 
